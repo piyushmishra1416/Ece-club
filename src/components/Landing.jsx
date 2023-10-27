@@ -1,13 +1,13 @@
 import React from 'react'
-import ece from "../assets/ece.jpg"
-import ece1 from "../assets/ece1.jpeg"
-import image from "../assets/image.svg"
+// import ece from "../assets/ece.jpg"
+// import ece1 from "../assets/ece1.jpeg"
+// import image from "../assets/image.svg"
 import Footer from '../layouts/footer'
 
 function Landing() {
   return (
     <div className='h-10 w-screen'>
-      <img src={ece} alt='backgroundimage' />  
+      {/* <img src={ece} alt='backgroundimage' />   */}
       <section className='flex justify-center items-center'>  
         <div className=''>
           <h1>About Us</h1>
