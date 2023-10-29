@@ -1,23 +1,85 @@
-import React from 'react'
+import React from "react";
 // import ece from "../assets/ece.jpg"
 // import ece1 from "../assets/ece1.jpeg"
 // import image from "../assets/image.svg"
-import Footer from '../layouts/footer'
+import Footer from "../layouts/footer";
+import bgImage from "../assets/bgImage.jpg";
+import quotationmark from "../assets/quotationmark.png";
 
 function Landing() {
   return (
-    <div className='h-10 w-screen'>
-      {/* <img src={ece} alt='backgroundimage' />   */}
-      <section className='flex justify-center items-center'>  
-        <div className=''>
-          <h1>About Us</h1>
-          <p>Electronics Club, earlier started as a hobby group has now expanded into a students’ organisation with the objective of inculcating a spirit of developing innovative, cutting edge technology solutions to real life problems. We provide a platform to the students’ body where any individual with an idea can approach the club freely to grasp the necessary technical skills required to turn that idea into a reality. This is a place where students get an opportunity to think outside the academic curriculum and get practical experience by implementing and applying concepts learnt in various theoretical courses. We conduct a plethora of lectures, workshops, projects as well as competitions throughout the year concerning both analog as well as digital electronics keep the calendar busy and the participants, learning. Our summer projects are indeed a stepping stone for many freshers to develop interest in a particular field which help them in their future projects/internships/startups. We have not restricted ourselves to any specific domains but our branches span across various domains like embedded systems and IOT, VLSI, signal processing, machine learning and artificial intelligence. Over the past few years, we have taken up various Industrial projects offered to us by well-known Indian research organisations like DRDO, BARC INDIA (Broadcast Audience Research Council), BETIC.</p>
-          <image />
+    <div className="h-10 w-screen">
+      <section className="flex flex-col h-screen text-white justify-center items-center text-center relative">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        ></div>
+        <div className="relative z-10">
+          <h2 className="text-xl font-semibold mb-4">
+            Welcome to the ECE club of IIIT Kottayam
+          </h2>
+          <h1 className="text-6xl font-bold text-primary">ELIX</h1>
+          <p>Electronic Learning and Innovation eXperience</p>
+          <p className="mt-8 text-gray-700 flex items-center">
+            <img
+              src={quotationmark}
+              alt="quotation mark"
+              className="w-5 mr-2 inline"
+            />
+            "It is not enough to wire the world if you short-circuit the soul.
+            Technology without heart is not enough."
+          </p>
         </div>
-      </section> 
+      </section>
+
+      <section className="flex justify-center items-center bg-beige-50 py-12"  style={{ backgroundColor: "#928779" }}>
+        <div className="w-1/2">
+          <img alt="About Us" className="w-full h-auto" />
+        </div>
+        <div className="w-1/2 mx-4 md:mx-20">
+          <h1 className="text-4xl font-bold mb-4  text-primary">About Us</h1>
+          <p className="text-gray-800 leading-6">
+            Electronics Club, originally founded as a hobby group, has evolved
+            into a thriving student organization. Our mission is to foster a
+            culture of innovation, crafting cutting-edge technological solutions
+            for real-world challenges. We offer a platform where any student
+            with an idea can freely approach the club to acquire the necessary
+            technical skills to bring that idea to life. This is a space where
+            students can transcend the boundaries of their academic curriculum
+            and gain hands-on experience by applying concepts learned in various
+            theoretical courses. Throughout the year, we host a wide range of
+            lectures, workshops, projects, and competitions covering both analog
+            and digital electronics to keep our calendar bustling with learning
+            opportunities.
+          </p>
+        </div>
+      </section>
+      <section className="flex justify-center items-center py-12">
+        <div className="w-1/2">
+          <img alt="About Us" className="w-full h-auto" />
+        </div>
+        <div className="w-1/2 mx-4 md:mx-20">
+          <h1 className="text-4xl font-bold mb-4  text-primary">Mission</h1>
+          <p className="text-gray-800 leading-6">
+            Electronics Club, originally founded as a hobby group, has evolved
+            into a thriving student organization. Our mission is to foster a
+            culture of innovation, crafting cutting-edge technological solutions
+            for real-world challenges. We offer a platform where any student
+            with an idea can freely approach the club to acquire the necessary
+            technical skills to bring that idea to life. This is a space where
+            students can transcend the boundaries of their academic curriculum
+            and gain hands-on experience by applying concepts learned in various
+            theoretical courses. Throughout the year, we host a wide range of
+            lectures, workshops, projects, and competitions covering both analog
+            and digital electronics to keep our calendar bustling with learning
+            opportunities.
+          </p>
+        </div>
+      </section>
+
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Landing
+export default Landing;
