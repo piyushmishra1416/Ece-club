@@ -1,50 +1,41 @@
 import React from "react";
 import ActionAreaCard from "./Card";
-import quotationmark from "../assets/quotationmark.png";
 import person from "../assets/person.jpeg";
-import peopleinfo from "./PeopleInfo.js"
+import peopleinfo from "./PeopleInfo.js";
+import ResponsiveAppBar from "./Navbar";
+
+
+
 
 function People() {
   return (
     <div>
+      <ResponsiveAppBar />
+
       <div>
         <h2 className="text-6xl text-center mb-10">Patrons</h2>
         <div className="flex justify-center items-center space-x-4">
+        {peopleinfo && peopleinfo[0].member.map((people) => ( 
           <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
+            imageSrc={people.image}
+            typographyContent={people.name}
             designation="designation"
           />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="NAME"
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
-          />
+          ))}
+         
         </div>
       </div>
+
       <div>
         <h2 className="text-6xl text-center mb-10">Faculty Members</h2>
         <div className="flex justify-center items-center space-x-4">
+        {peopleinfo && peopleinfo[0].member.map((people) => ( 
           <ActionAreaCard
-            imageSrc={peopleinfo[0].image}
-            typographyContent={peopleinfo[0].name}
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="NAME"
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
+            imageSrc={people.name}
             typographyContent="name"
             designation="designation"
           />
+          ))}
         </div>
       </div>
       <div>
@@ -59,8 +50,9 @@ function People() {
             imageSrc={person}
             typographyContent="NAME"
             designation="designation"
-          /></div>
-            <div className="flex justify-center items-center space-x-4">
+          />
+        </div>
+        <div className="flex justify-center items-center space-x-4">
           <ActionAreaCard
             imageSrc={person}
             typographyContent="name"
@@ -70,7 +62,8 @@ function People() {
             imageSrc={person}
             typographyContent="NAME"
             designation="designation"
-          /></div>
+          />
+        </div>
         <div className="flex justify-center items-center space-x-4">
           <ActionAreaCard
             imageSrc={person}

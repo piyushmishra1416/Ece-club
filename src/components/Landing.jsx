@@ -4,6 +4,7 @@ import bgImage from "../assets/bgImage.jpg";
 import serversbg from "../assets/serversbg.webp";
 import abc from "../assets/abc.jpg";
 import quotationmark from "../assets/quotationmark.png";
+import ResponsiveAppBar from "./Navbar";
 
 function Landing() {
   const sectionStyle = {
@@ -12,7 +13,9 @@ function Landing() {
   };
 
   return (
+    
     <div className="h-10 w-screen">
+      <ResponsiveAppBar />
       <section className="flex flex-col h-screen text-white justify-center items-center text-center relative" style = {sectionStyle}>
         <div
           className="absolute inset-0 bg-cover bg-center"
