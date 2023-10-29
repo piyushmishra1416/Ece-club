@@ -1,4 +1,6 @@
+import ActionAreaCard from "./components/Card"
 import Landing from "./components/Landing"
+import People from "./components/People"
 
 
 function App() {
@@ -6,8 +8,9 @@ function App() {
 
   return (
     <>
-    <Landing />
-       
+    {/* <Landing /> */}
+       <People />
+     
     </>
   )
 }
