@@ -4,15 +4,15 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import logo from "../assets/logo.png"
 function Footer() {
   return (
     <section className="h-full  flex flex-col"  >
       <div className="text-white" style={{ backgroundColor: "#000000" }}>
       <div className="flex mt-14 px-28">
         <div className="w-1/2">
-          <img src="" alt="logo" />
-          <h2 className="font-bold  text-2xl">ELIX.</h2>
-          <h2 className=" mb-4">Where innovation meets excellence</h2>
+          <img src={logo} alt="logo" className="w-64 h-64" />
+         
           <div className="flex space-x-4">
             <FacebookIcon fontSize="small" sx={{ color: "#1877f2" }} />
             <YouTubeIcon fontSize="small" sx={{ color: "#ff0000" }} />

@@ -2,6 +2,7 @@ import React from "react";
 import ActionAreaCard from "./Card";
 import quotationmark from "../assets/quotationmark.png";
 import person from "../assets/person.jpeg";
+import peopleinfo from "./PeopleInfo.js"
 
 function People() {
   return (
@@ -30,8 +31,8 @@ function People() {
         <h2 className="text-6xl text-center mb-10">Faculty Members</h2>
         <div className="flex justify-center items-center space-x-4">
           <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
+            imageSrc={peopleinfo[0].image}
+            typographyContent={peopleinfo[0].name}
             designation="designation"
           />
           <ActionAreaCard
@@ -47,9 +48,8 @@ function People() {
         </div>
       </div>
       <div>
-        <h2 className="text-6xl text-center mb-10">Club Leads</h2>
-        <div className=" justify-center items-center space-x-4">
-          <div className="flex">
+        <h2 className="text-5xl text-center mb-10">Club Leads</h2>
+        <div className="flex justify-center items-center space-x-4">
           <ActionAreaCard
             imageSrc={person}
             typographyContent="name"
@@ -59,7 +59,8 @@ function People() {
             imageSrc={person}
             typographyContent="NAME"
             designation="designation"
-          />
+          /></div>
+            <div className="flex justify-center items-center space-x-4">
           <ActionAreaCard
             imageSrc={person}
             typographyContent="name"
@@ -67,36 +68,9 @@ function People() {
           />
           <ActionAreaCard
             imageSrc={person}
-            typographyContent="name"
+            typographyContent="NAME"
             designation="designation"
-          />
-          </div>
-          <div className="flex">
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
-          />
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 className="text-5xl text-center mb-10">Sub club Leads</h2>
+          /></div>
         <div className="flex justify-center items-center space-x-4">
           <ActionAreaCard
             imageSrc={person}
@@ -113,6 +87,89 @@ function People() {
             typographyContent="name"
             designation="designation"
           />
+        </div>
+        <div className="flex justify-center items-center space-x-4">
+          <ActionAreaCard
+            imageSrc={person}
+            typographyContent="name"
+            designation="designation"
+          />
+          <ActionAreaCard
+            imageSrc={person}
+            typographyContent="NAME"
+            designation="designation"
+          />
+          <ActionAreaCard
+            imageSrc={person}
+            typographyContent="name"
+            designation="designation"
+          />
+        </div>{" "}
+        <div className="flex justify-center items-center space-x-4">
+          <ActionAreaCard
+            imageSrc={person}
+            typographyContent="name"
+            designation="designation"
+          />
+          <ActionAreaCard
+            imageSrc={person}
+            typographyContent="NAME"
+            designation="designation"
+          />
+          <ActionAreaCard
+            imageSrc={person}
+            typographyContent="name"
+            designation="designation"
+          />
+        </div>
+      </div>
+      <div>
+        <h2 className="text-6xl text-center mb-10">Executive Members</h2>
+        <div className=" justify-center items-center space-x-4">
+          <div className="flex  justify-center items-center space-x-4">
+            <ActionAreaCard
+              imageSrc={person}
+              typographyContent="name"
+              designation="designation"
+            />
+            <ActionAreaCard
+              imageSrc={person}
+              typographyContent="NAME"
+              designation="designation"
+            />
+            <ActionAreaCard
+              imageSrc={person}
+              typographyContent="name"
+              designation="designation"
+            />
+            <ActionAreaCard
+              imageSrc={person}
+              typographyContent="name"
+              designation="designation"
+            />
+          </div>
+          <div className="flex  justify-center items-center space-x-4">
+            <ActionAreaCard
+              imageSrc={person}
+              typographyContent="name"
+              designation="designation"
+            />
+            <ActionAreaCard
+              imageSrc={person}
+              typographyContent="name"
+              designation="designation"
+            />
+            <ActionAreaCard
+              imageSrc={person}
+              typographyContent="name"
+              designation="designation"
+            />
+            <ActionAreaCard
+              imageSrc={person}
+              typographyContent="name"
+              designation="designation"
+            />
+          </div>
         </div>
       </div>
     </div>

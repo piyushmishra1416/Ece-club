@@ -1,19 +1,26 @@
 import React from "react";
 import Footer from "../layouts/Footer";
 import bgImage from "../assets/bgImage.jpg";
+import serversbg from "../assets/serversbg.webp";
+import abc from "../assets/abc.jpg";
 import quotationmark from "../assets/quotationmark.png";
 
 function Landing() {
+  const sectionStyle = {
+    background: 'linear-gradient(to bottom, black, #4ac7f0)',
+    // Add any other styles you need for the section here
+  };
+
   return (
     <div className="h-10 w-screen">
-      <section className="flex flex-col h-screen text-white justify-center items-center text-center relative">
+      <section className="flex flex-col h-screen text-white justify-center items-center text-center relative" style = {sectionStyle}>
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${bgImage})` }}
+          style={{ backgroundImage: `url(${abc})` }}
         ></div>
         <div className="relative z-10">
           <h2 className="text-xl font-semibold mb-4">
-            Welcome to the ECE club of IIIT Kottayam
+            Welcome to the<b> Electronics </b> club of IIIT Kottayam
           </h2>
           <h1 className="text-6xl font-bold text-primary">ELIX</h1>
           <p>Electronic Learning and Innovation eXperience</p>

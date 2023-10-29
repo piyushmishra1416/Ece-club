@@ -1,31 +1,55 @@
-import React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import quotationmark from "../assets/quotationmark.png";
+import React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
 
 export default function ActionAreaCard(props) {
   const { imageSrc, typographyContent, designation } = props;
-  console.log(imageSrc);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card
+      sx={{
+        maxWidth: 300,
+        borderRadius: 3,
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        marginBottom: 4,
+      }}
+    >
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image={imageSrc}
-          alt="Image"
+          alt="Description of the image"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              fontFamily: "Arial, sans-serif",
+              fontSize: "1.2em",
+              fontWeight: "bold",
+              color: "#333",
+            }}
+          >
             {typographyContent}
           </Typography>
-          <Typography gutterBottom variant="h5" component="div">
-            {designation}
-          </Typography>
+          {designation && (
+            <Typography
+              variant="subtitle1"
+              color="textSecondary"
+              style={{
+                fontFamily: "Arial, sans-serif",
+                fontSize: "1em",
+                color: "#666",
+              }}
+            >
+              {designation}
+            </Typography>
+          )}
         </CardContent>
       </CardActionArea>
     </Card>
