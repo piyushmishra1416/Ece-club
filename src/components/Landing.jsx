@@ -1,8 +1,5 @@
 import React from "react";
-// import ece from "../assets/ece.jpg"
-// import ece1 from "../assets/ece1.jpeg"
-// import image from "../assets/image.svg"
-import Footer from "../layouts/footer";
+import Footer from "../layouts/Footer";
 import bgImage from "../assets/bgImage.jpg";
 import quotationmark from "../assets/quotationmark.png";
 
