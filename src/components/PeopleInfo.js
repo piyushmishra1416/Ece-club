@@ -9,11 +9,11 @@ const peopleinfo = [
       },
       {
         name: "Registrar",
-        image: "public/Website people Images/faculty/registrar.jpeg",
+        image: "/Website people Images/faculty/registrar.jpeg",
       },
       {
         name: "Prof. in charge",
-        image: "public/Website people Images/faculty/p_mohanan.jpeg",
+        image: "/Website people Images/faculty/p_mohanan.jpeg",
       },
     ],
   },
