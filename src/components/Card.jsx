@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 import quotationmark from "../assets/quotationmark.png";
 
 export default function ActionAreaCard(props) {
-  const { imageSrc, typographyContent } = props;
+  const { imageSrc, typographyContent, designation } = props;
   console.log(imageSrc);
 
   return (
@@ -22,6 +22,9 @@ export default function ActionAreaCard(props) {
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {typographyContent}
+          </Typography>
+          <Typography gutterBottom variant="h5" component="div">
+            {designation}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -29,7 +29,7 @@ function Landing() {
         </div>
       </section>
 
-      <section className="flex justify-center items-center bg-beige-50 py-12"  style={{ backgroundColor: "#928779" }}>
+      <section className="flex justify-center items-center bg-beige-50 py-12"  style={{ backgroundColor: "#BDC2BF" }}>
         <div className="w-1/2">
           <img alt="About Us" className="w-full h-auto" />
         </div>
