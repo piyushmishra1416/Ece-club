@@ -19,7 +19,7 @@ function People() {
           <ActionAreaCard
             imageSrc={people.image}
             typographyContent={people.name}
-            designation="designation"
+            designation={people.designation}
           />
           ))}
          
@@ -29,11 +29,11 @@ function People() {
       <div>
         <h2 className="text-6xl text-center mb-10">Faculty Members</h2>
         <div className="flex justify-center items-center space-x-4">
-        {peopleinfo && peopleinfo[0].member.map((people) => ( 
+        {peopleinfo && peopleinfo[1].member.map((people) => ( 
           <ActionAreaCard
-            imageSrc={people.name}
-            typographyContent="name"
-            designation="designation"
+          imageSrc={people.image}
+          typographyContent={people.name}
+          designation={people.designation}
           />
           ))}
         </div>
@@ -41,127 +41,71 @@ function People() {
       <div>
         <h2 className="text-5xl text-center mb-10">Club Leads</h2>
         <div className="flex justify-center items-center space-x-4">
+        {peopleinfo && peopleinfo[2].member.map((people) => ( 
           <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
+            imageSrc={people.image}
+            typographyContent={people.name}
+            designation={people.designation}
           />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="NAME"
-            designation="designation"
-          />
+          ))}
         </div>
         <div className="flex justify-center items-center space-x-4">
+        {peopleinfo && peopleinfo[3].member.map((people) => ( 
           <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
+            imageSrc={people.image}
+            typographyContent={people.name}
+            designation={people.designation}
           />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="NAME"
-            designation="designation"
-          />
+          ))}
         </div>
         <div className="flex justify-center items-center space-x-4">
+        {peopleinfo && peopleinfo[4].member.map((people) => ( 
           <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
+            imageSrc={people.image}
+            typographyContent={people.name}
+            designation={people.designation}
           />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="NAME"
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
-          />
+          ))}
         </div>
         <div className="flex justify-center items-center space-x-4">
+        {peopleinfo && peopleinfo[5].member.map((people) => ( 
           <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
+            imageSrc={people.image}
+            typographyContent={people.name}
+            designation={people.designation}
           />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="NAME"
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
-          />
+          ))}
         </div>{" "}
         <div className="flex justify-center items-center space-x-4">
+        {peopleinfo && peopleinfo[6].member.map((people) => ( 
           <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
+            imageSrc={people.image}
+            typographyContent={people.name}
+            designation={people.designation}
           />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="NAME"
-            designation="designation"
-          />
-          <ActionAreaCard
-            imageSrc={person}
-            typographyContent="name"
-            designation="designation"
-          />
+          ))}
         </div>
       </div>
       <div>
         <h2 className="text-6xl text-center mb-10">Executive Members</h2>
         <div className=" justify-center items-center space-x-4">
           <div className="flex  justify-center items-center space-x-4">
-            <ActionAreaCard
-              imageSrc={person}
-              typographyContent="name"
-              designation="designation"
-            />
-            <ActionAreaCard
-              imageSrc={person}
-              typographyContent="NAME"
-              designation="designation"
-            />
-            <ActionAreaCard
-              imageSrc={person}
-              typographyContent="name"
-              designation="designation"
-            />
-            <ActionAreaCard
-              imageSrc={person}
-              typographyContent="name"
-              designation="designation"
-            />
+          {peopleinfo && peopleinfo[7].member.map((people) => ( 
+          <ActionAreaCard
+            imageSrc={people.image}
+            typographyContent={people.name}
+            designation={people.designation}
+          />
+          ))}
           </div>
           <div className="flex  justify-center items-center space-x-4">
-            <ActionAreaCard
-              imageSrc={person}
-              typographyContent="name"
-              designation="designation"
-            />
-            <ActionAreaCard
-              imageSrc={person}
-              typographyContent="name"
-              designation="designation"
-            />
-            <ActionAreaCard
-              imageSrc={person}
-              typographyContent="name"
-              designation="designation"
-            />
-            <ActionAreaCard
-              imageSrc={person}
-              typographyContent="name"
-              designation="designation"
-            />
+          {peopleinfo && peopleinfo[8].member.map((people) => ( 
+          <ActionAreaCard
+            imageSrc={people.image}
+            typographyContent={people.name}
+            designation={people.designation}
+          />
+          ))}
           </div>
         </div>
       </div>

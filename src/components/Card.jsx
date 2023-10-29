@@ -12,6 +12,7 @@ export default function ActionAreaCard(props) {
     <Card
       sx={{
         maxWidth: 300,
+    
         borderRadius: 3,
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         marginBottom: 4,
@@ -23,6 +24,7 @@ export default function ActionAreaCard(props) {
           height="200"
           image={imageSrc}
           alt="Description of the image"
+          sx= {{height: 350}}
         />
         <CardContent>
           <Typography

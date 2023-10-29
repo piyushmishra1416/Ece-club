@@ -4,15 +4,18 @@ const peopleinfo = [
     position: "Patrons",
     member: [
       {
-        name: "Director",
-        image: "public/Website people Images/faculty/director.jpeg",
+        name: "Dr. Rajiv V. Dharaskar",
+        designation: "Director, IIIT Kottayam",
+        image: "/Website people Images/faculty/director.jpeg",
       },
       {
-        name: "Registrar",
+        name: "Dr. M Radhakrishnan",
+        designation: "Registrar, IIIT Kottayam",
         image: "/Website people Images/faculty/registrar.jpeg",
       },
       {
-        name: "Prof. in charge",
+        name: "Prof P. Mohanan",
+        designation: "Professor In-charge (Academics)",
         image: "/Website people Images/faculty/p_mohanan.jpeg",
       },
     ],
@@ -22,25 +25,130 @@ const peopleinfo = [
     position: "Faculty Members",
     member: [
       {
-        name: "Aaditi",
+        name: "Dr. Ananth A",
+        designation: "HOD, IIIT Kottayam",
+        image: "/Website people Images/faculty/ananth.jpeg",
+      },
+      {
+        name: "Dr. Kala S",
+        designation: " I2CS research group lead",
+        image: "/Website people Images/faculty/Kala s.jpg",
+      },
+      {
+        name: "Dr. Rajesh G",
+        designation: "Faculty-in-charge of Electronics club",
+        image: "/Website people Images/faculty/rajesh.jpg",
+      },
+    ],
+  },
+
+  {
+    position: "chairperson",
+    member: [
+      {
+        name: "Harsh Gupta",
+        designation: "Chairperson",
         image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
       },
       {
         name: "Aaditi",
-        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
-      },
-      {
-        name: "Aaditi",
+        designation: "Chairperson",
         image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
       },
     ],
   },
 
   {
-    position: "Club Leads",
+    position: "chairperson",
     member: [
       {
+        name: "Harsh Gupta",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+      {
         name: "Aaditi",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+    ],
+  },
+
+  {
+    position: "chairperson",
+    member: [
+      {
+        name: "Harsh Gupta",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+      {
+        name: "Aaditi",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+    ],
+  },
+
+  {
+    position: "chairperson",
+    member: [
+      {
+        name: "Harsh Gupta",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+      {
+        name: "Aaditi",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+    ],
+  },
+
+  {
+    position: "chairperson",
+    member: [
+      {
+        name: "Harsh Gupta",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+      {
+        name: "Aaditi",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+    ],
+  },
+
+  {
+    position: "chairperson",
+    member: [
+      {
+        name: "Harsh Gupta",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+      {
+        name: "Aaditi",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+    ],
+  },
+
+  {
+    position: "chairperson",
+    member: [
+      {
+        name: "Harsh Gupta",
+        designation: "Chairperson",
+        image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
+      },
+      {
+        name: "Aaditi",
+        designation: "Chairperson",
         image: "src/assets/Website people Images/2021 Batch/aadithi.jpg",
       },
     ],
