@@ -24,23 +24,23 @@ function Landing() {
     <div className="h-10 w-screen">
       {/* <ResponsiveAppBar /> */}
       <section
-        className="flex flex-col h-screen text-white justify-center items-center text-center relative"
+        className="flex flex-col h-screen text-white  items-center text-center relative"
         style={sectionStyle}
       >
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${bg5})` }}
         ></div>
-        <div className="relative z-10">
-          <h2 className="text-xl font-semibold mb-3">
-            Welcome to the<b> Technical Club </b> of ECE Department, IIIT
-            Kottayam
+        <div className="relative mt-[15%] z-10">
+          <h2 className="text-3xl  mb-3">
+            Welcome to the<b> Technical Club </b> of ECE Department,<b> IIIT
+            Kottayam</b>
           </h2>
           <h1 className="text-6xl font-bold text-primary mb-3">ELIX</h1>
-          <p className="text-2xl">
-            <b>Electronic Learning and Innovation eXperience</b>
+          <p className="text-3xl">
+            <b>Sparkling Innovation Unleashing Potential</b>
           </p>
-          <p className="mt-8 text-gray-700 flex items-center text-2xl">
+          <p className="mt-12 flex items-center text-2xl "  style={{ color: "#EFF2C0" }}>
             <img
               src={quotationmark}
               alt="quotation mark"
@@ -53,7 +53,7 @@ function Landing() {
       </section>
 
       <section
-        className="flex justify-center absloute top-[30%] bg-beige-50 py-12"
+        className="flex justify-center top-[30%] bg-beige-50 py-12"
         style={{ backgroundColor: "#BDC2BF" }}
       >
         <div className="w-1/2">

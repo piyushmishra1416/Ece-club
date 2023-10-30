@@ -43,7 +43,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/">
-            <img src={logocrop} alt="logo" className="h-24 ml-10 w-40" />
+            <img src={logocrop} alt="logo" className="h-24 ml-10 w-full" />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -91,7 +91,7 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block", margin:1 }}
+                sx={{ my: 2, color: "white", display: "block", margin:1 , fontSize:18}}
                 className="hover:text-zinc-400"
               >
                 {page}

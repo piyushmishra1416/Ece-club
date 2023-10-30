@@ -11,7 +11,7 @@ const reviews = [
   {
     id: 2,
     name: "Amritha",
-    job: "Deputy chairperson",
+    job: "vice chairperson",
     image: "/Website people Images/2022 Batch/Amritha.jpg",
     text: "We aim for ELIX to be a platform for learning and creativity. Let's amplify our passion for electronics, explore new horizons, and spark innovation together",
   },
