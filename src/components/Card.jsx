@@ -11,7 +11,7 @@ export default function ActionAreaCard(props) {
   return (
     <Card
       sx={{
-        maxWidth: 300,
+      width:300,
     
         borderRadius: 3,
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
