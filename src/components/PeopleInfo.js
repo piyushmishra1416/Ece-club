@@ -26,17 +26,17 @@ const peopleinfo = [
     member: [
       {
         name: "Dr. Ananth A",
-        designation: "Head of Department ",
+        designation: "Head of the Department ",
         image: "/Website people Images/faculty/ananth.jpeg",
       },
       {
         name: "Dr. Kala S",
-        designation: " I2CS research group lead",
+        designation: "Former HOD, I2CS research group lead",
         image: "/Website people Images/faculty/Kala s.jpg",
       },
       {
         name: "Dr. Rajesh G",
-        designation: "Faculty-in-charge of Electronics club",
+        designation: "Faculty-in-Charge of ELIX",
         image: "/Website people Images/faculty/rajesh.jpg",
       },
     ],

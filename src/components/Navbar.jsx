@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/">
-            <img src={logo1} alt="logo" className="h-24 ml-10 w-24" />
+            <img src={logo1} alt="logo" className="h-[100px] ml-10 w-[200px]" />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

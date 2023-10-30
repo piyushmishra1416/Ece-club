@@ -30,12 +30,12 @@ function Landing() {
           style={{ backgroundImage: `url(${bgImage})` }}
         ></div>
         <div className="relative z-10">
-          <h2 className="text-xl font-semibold mb-4">
-            Welcome to the<b> Electronics </b> club of IIIT Kottayam
+          <h2 className="text-xl font-semibold mb-3">
+            Welcome to the<b> Technical Club </b>  of ECE Department, IIIT Kottayam
           </h2>
-          <h1 className="text-6xl font-bold text-primary">ELIX</h1>
-          <p>Electronic Learning and Innovation eXperience</p>
-          <p className="mt-8 text-gray-700 flex items-center">
+          <h1 className="text-6xl font-bold text-primary mb-3">ELIX</h1>
+          <p className="text-2xl"><b>Electronic Learning and Innovation eXperience</b></p>
+          <p className="mt-8 text-gray-700 flex items-center text-2xl">
             <img
               src={quotationmark}
               alt="quotation mark"
