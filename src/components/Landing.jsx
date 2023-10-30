@@ -7,8 +7,10 @@ import quotationmark from "../assets/quotationmark.png";
 import aboutus from "../assets/aboutus.jpg";
 import electronics from "../assets/electronics.avif";
 import mission from "../assets/mission.jpeg";
-import reviews from "../data";
-import Testimonials from "../layouts/Crousal/Testimonials"
+import bg1 from "../assets/bg1.jpeg";
+import bg2 from "../assets/bg2.jpeg";
+import bg3 from "../assets/bg3.jpeg";
+import Carousel from "./Carousel";
 
 function Landing() {
   const sectionStyle = {
@@ -71,9 +73,7 @@ function Landing() {
           </p>
         </div>
       </section>
-      <div className="">
-      <Testimonials reviews={reviews}/>
-      </div>
+      <Carousel />
       <section className="flex justify-center items-center py-12"  style={{ backgroundColor: "#BDC2BF" }}>
         <div className="w-1/2">
           <img alt="About Us" src={mission} className="w-5/6 mx-auto rounded-lg h-auto" />

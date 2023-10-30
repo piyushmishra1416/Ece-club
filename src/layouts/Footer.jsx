@@ -33,28 +33,28 @@ function Footer() {
             </div>
           </div>
           <div className="w-1/2 flex">
-          <div className="mt-5 ml-14">
-            <ul className="text-lg">
-              <li className="mb-2 text-2xl font-bold">Elix</li>
-              <li>About </li>
-              <li>People</li>
-              <li>Events</li>
-              <li>Blogs</li>
-            </ul>
+            <div className="mt-5 ml-14">
+              <h2 className="text-2xl font-bold mb-4">Elix</h2>
+              <ul className="text-lg">
+                <li>About </li>
+                <li>People</li>
+                <li>Events</li>
+                <li>Blogs</li>
+              </ul>
+            </div>
+            <div className="ml-20 mt-5">
+              <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+              <ul className="text-lg">
+                {clubLeads.map((lead, index) => (
+                  <li key={index} className="mb-2">
+                    <strong>{lead.name}</strong>
+                    <div>{lead.position}</div>
+                    <div>Email: {lead.email}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="ml-20 mt-5">
-      <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-      <ul className="text-lg">
-        {clubLeads.map((lead, index) => (
-          <li key={index} className="mb-2">
-            <strong>{lead.name}</strong>
-            <div>{lead.position}</div>
-            <div>Email: {lead.email}</div>
-          </li>
-        ))}
-      </ul>
-    </div>
-        </div>
         </div>
         <hr className="mt-10 mx-auto  w-3/4 mb-2" />
         <div className="flex ml-40  mb-10">
