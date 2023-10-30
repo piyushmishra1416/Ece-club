@@ -1,23 +1,101 @@
-import React from 'react'
-// import ece from "../assets/ece.jpg"
-// import ece1 from "../assets/ece1.jpeg"
-// import image from "../assets/image.svg"
-import Footer from '../layouts/footer'
+import React from "react";
+import Footer from "../layouts/Footer";
+import bgImage from "../assets/bgImage.jpg";
+import serversbg from "../assets/serversbg.webp";
+import abc from "../assets/abc.jpg";
+import quotationmark from "../assets/quotationmark.png";
+import aboutus from "../assets/aboutus.jpg";
+import electronics from "../assets/electronics.avif";
+import mission from "../assets/mission.jpeg";
+import reviews from "../data";
+import Testimonials from "../layouts/Crousal/Testimonials"
 
 function Landing() {
+  const sectionStyle = {
+    background: "linear-gradient(to bottom, black, #4ac7f0)",
+    // Add any other styles you need for the section here
+  };
+
   return (
-    <div className='h-10 w-screen'>
-      {/* <img src={ece} alt='backgroundimage' />   */}
-      <section className='flex justify-center items-center'>  
-        <div className=''>
-          <h1>About Us</h1>
-          <p>Electronics Club, earlier started as a hobby group has now expanded into a students’ organisation with the objective of inculcating a spirit of developing innovative, cutting edge technology solutions to real life problems. We provide a platform to the students’ body where any individual with an idea can approach the club freely to grasp the necessary technical skills required to turn that idea into a reality. This is a place where students get an opportunity to think outside the academic curriculum and get practical experience by implementing and applying concepts learnt in various theoretical courses. We conduct a plethora of lectures, workshops, projects as well as competitions throughout the year concerning both analog as well as digital electronics keep the calendar busy and the participants, learning. Our summer projects are indeed a stepping stone for many freshers to develop interest in a particular field which help them in their future projects/internships/startups. We have not restricted ourselves to any specific domains but our branches span across various domains like embedded systems and IOT, VLSI, signal processing, machine learning and artificial intelligence. Over the past few years, we have taken up various Industrial projects offered to us by well-known Indian research organisations like DRDO, BARC INDIA (Broadcast Audience Research Council), BETIC.</p>
-          <image />
+    <div className="h-10 w-screen">
+      {/* <ResponsiveAppBar /> */}
+      <section
+        className="flex flex-col h-screen text-white justify-center items-center text-center relative"
+        style={sectionStyle}
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        ></div>
+        <div className="relative z-10">
+          <h2 className="text-xl font-semibold mb-3">
+            Welcome to the<b> Technical Club </b>  of ECE Department, IIIT Kottayam
+          </h2>
+          <h1 className="text-6xl font-bold text-primary mb-3">ELIX</h1>
+          <p className="text-2xl"><b>Electronic Learning and Innovation eXperience</b></p>
+          <p className="mt-8 text-gray-700 flex items-center text-2xl">
+            <img
+              src={quotationmark}
+              alt="quotation mark"
+              className="w-5 mr-2 inline"
+            />
+            "It is not enough to wire the world if you short-circuit the soul.
+            Technology without heart is not enough."
+          </p>
         </div>
-      </section> 
+      </section>
+
+      <section
+        className="flex justify-center items-center bg-beige-50 py-12"
+        style={{ backgroundColor: "#BDC2BF" }}
+      >
+        <div className="w-1/2">
+          <img alt="About Us" src={aboutus} className="w-5/6 mx-auto rounded-lg h-5/6" />
+        </div>
+        <div className="w-1/2 mx-4 md:mx-20">
+          <h1 className="text-4xl font-bold mb-4  text-primary">About Us</h1>
+          <p className="text-gray-800 leading-6">
+            In a dynamic field like Electronics, our club recognizes the
+            importance of bridging gap between theoretical knowledge and
+            practical application. Our club acts as a guiding light and a
+            gateway for those who share a passion for electronics. We explore
+            various realms within electronics, offering students opportunities
+            to work on hands-on projects, connect with industry professionals,
+            and participate in sessions that shed light on the latest
+            developments in the world of electronics. Our motto, "Sparking
+            Innovation, Unleashing Potential" encapsulates our core values. ELIX
+            is more than a club; it's a place where your innovative ideas come
+            to life, where you build valuable connections with like-minded
+            individuals, and where you nurture professional relationships. ELIX
+            opens the door to endless possibilities in the field of electronics.
+          </p>
+        </div>
+      </section>
+      <div className="">
+      <Testimonials reviews={reviews}/>
+      </div>
+      <section className="flex justify-center items-center py-12"  style={{ backgroundColor: "#BDC2BF" }}>
+        <div className="w-1/2">
+          <img alt="About Us" src={mission} className="w-5/6 mx-auto rounded-lg h-auto" />
+        </div>
+        <div className="w-1/2 mx-4 md:mx-20">
+          <h1 className="text-4xl font-bold mb-4  text-primary">Mission</h1>
+          <p className="text-gray-800 leading-6">
+            Our mission is to empower students with the knowledge and skills
+            required for excellence in the dynamic and ever-evolving field of
+            electronics. We are deeply dedicated to bridging the gap between
+            theoretical understanding and real-world application, equipping
+            students to become industry-ready. Join us on your journey towards
+            industry preparedness with the Electronics Club, and together, we
+            will learn, innovate, and contribute to a brighter future through
+            the transformative power of electronics.
+          </p>
+        </div>
+      </section>
+
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Landing
+export default Landing;

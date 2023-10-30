@@ -14,15 +14,24 @@ const Card = (props) => {
     let review = props.review;
   return (
     <div className='flex flex-col md:relative'>
-      <div className='absolute top-[-7rem] z-[10] mx-auto'>
+      {/* <div className='absolute top-[2rem] left-[2rem] z-[10] mx-auto'>
+      <img 
+        className="aspect-square rounded-full w-[140px] h-[140px] z-[25]"
+        src={review.image}/>
+        <div className='w-[140px] h-[140px] bg-violet-500 rounded-full absolute
+         top-[-6px] z-[-10] left-[10px]'></div>
+      </div> */}
+      <div className='text-center mt-7'>
+        <p className='tracking-wider font-bold text-2xl capitalize text-purple-600'>{review.name}</p>
+       <div className='h-[150px]'>
+       <div className='absolute top-[17%] left-[35%] z-[10] mx-auto'>
       <img 
         className="aspect-square rounded-full w-[140px] h-[140px] z-[25]"
         src={review.image}/>
         <div className='w-[140px] h-[140px] bg-violet-500 rounded-full absolute
          top-[-6px] z-[-10] left-[10px]'></div>
       </div>
-      <div className='text-center mt-7'>
-        <p className='tracking-wider font-bold text-2xl capitalize text-purple-600'>{review.name}</p>
+       </div>
         <p className='text-violet-300 uppercase text-sm mt-2'>{review.job}</p>
       </div>
 
