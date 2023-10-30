@@ -5,8 +5,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Testimonials = (props) => {
     const reviews = props.reviews; // Use 'const' for variables that won't be reassigned
-    let byDefault =1;
-    const [index, setIndex] = useState(byDefault); // Initialize 'index' with 0
+    const [index, setIndex] = useState(0); // Initialize 'index' with 0
 
     function leftShiftHandler() {
         if (index === 0) {
@@ -30,7 +29,7 @@ const Testimonials = (props) => {
     }
 
     return (
-        <div className='w-[85vw] md:w-[700px] bg-white flex flex-col justify-center items-center mt-10 p-10 transition-all duration-700 hover:shadow-xl rounded-md'>
+        <div className='w-[85vw] md:w-[700px] bg-gray-900 mt-[100px] flex flex-col justify-center items-center mt-10 p-10 transition-all duration-700 hover:shadow-xl rounded-md'>
             <Card review={reviews[index]} />
             <div className='flex text-3xl mt-10 gap-3 text-violet-400 font-bold mx-auto'>
                 <button onClick={leftShiftHandler} className='cursor-pointer hover:text-violet-500 '>
