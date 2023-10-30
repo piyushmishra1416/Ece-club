@@ -25,7 +25,7 @@ function People() {
          
         </div>
       </div>
-
+      <hr className="mt-10 mx-auto  w-3/4 mb-2" />
       <div>
         <h2 className="text-4xl font-bold text-center mb-10">Faculty Members</h2>
         <div className="flex flex-wrap justify-center items-center -mx-2 space-x-4">
@@ -39,6 +39,7 @@ function People() {
           ))}
         </div>
       </div>
+      <hr className="mt-10 mx-auto  w-3/4 mb-2" />
       <div>
         <h2 className="text-4xl font-bold text-center mb-10">Club Leads</h2>
         <div className="flex flex-wrap justify-center items-center -mx-2 space-x-4">
@@ -51,6 +52,7 @@ function People() {
           />
           ))}
         </div>
+        
         <div className="flex justify-center items-center space-x-4">
         {peopleinfo && peopleinfo[3].member.map((people) => ( 
           <ActionAreaCard
@@ -88,6 +90,7 @@ function People() {
           ))}
         </div>
       </div>
+      <hr className="mt-10 mx-auto  w-3/4 mb-2" />
       <div>
         <h2 className="text-4xl font-bold text-center mb-10">Executive Committee Members</h2>
         <div className=" justify-center items-center space-x-4">

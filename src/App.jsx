@@ -12,7 +12,7 @@ function App() {
       <ResponsiveAppBar />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/home" component={<Landing />} />
+          <Route path="/home" element={<Landing />} />
           <Route path="/people" element={<People />} />
           {/* <Route path="/about" component={About} />
       <Route path="/about" component={About} />
