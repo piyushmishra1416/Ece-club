@@ -15,7 +15,7 @@ function Landing() {
   return (
     
     <div className="h-10 w-screen">
-      <ResponsiveAppBar />
+      {/* <ResponsiveAppBar /> */}
       <section className="flex flex-col h-screen text-white justify-center items-center text-center relative" style = {sectionStyle}>
         <div
           className="absolute inset-0 bg-cover bg-center"

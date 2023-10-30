@@ -9,12 +9,12 @@ import ResponsiveAppBar from "./Navbar";
 
 function People() {
   return (
-    <div>
-      <ResponsiveAppBar />
+    <div className=" mx-auto ">
+     
 
-      <div>
-        <h2 className="text-6xl text-center mb-10">Patrons</h2>
-        <div className="flex justify-center items-center space-x-4">
+      <div >
+        <h2 className="text-4xl font-bold text-center mt-4 mb-8">Patrons</h2>
+        <div className="flex flex-wrap justify-center items-center -mx-2 space-x-4">
         {peopleinfo && peopleinfo[0].member.map((people) => ( 
           <ActionAreaCard
             imageSrc={people.image}
@@ -27,8 +27,9 @@ function People() {
       </div>
 
       <div>
-        <h2 className="text-6xl text-center mb-10">Faculty Members</h2>
-        <div className="flex justify-center items-center space-x-4">
+        <h2 className="text-4xl font-bold text-center mb-10">Faculty Members</h2>
+        <div className="flex flex-wrap justify-center items-center -mx-2 space-x-4">
+
         {peopleinfo && peopleinfo[1].member.map((people) => ( 
           <ActionAreaCard
           imageSrc={people.image}
@@ -39,8 +40,9 @@ function People() {
         </div>
       </div>
       <div>
-        <h2 className="text-5xl text-center mb-10">Club Leads</h2>
-        <div className="flex justify-center items-center space-x-4">
+        <h2 className="text-4xl font-bold text-center mb-10">Club Leads</h2>
+        <div className="flex flex-wrap justify-center items-center -mx-2 space-x-4">
+
         {peopleinfo && peopleinfo[2].member.map((people) => ( 
           <ActionAreaCard
             imageSrc={people.image}
@@ -87,7 +89,7 @@ function People() {
         </div>
       </div>
       <div>
-        <h2 className="text-6xl text-center mb-10">Executive Members</h2>
+        <h2 className="text-4xl font-bold text-center mb-10">Executive Committee Members</h2>
         <div className=" justify-center items-center space-x-4">
           <div className="flex  justify-center items-center space-x-4">
           {peopleinfo && peopleinfo[7].member.map((people) => ( 
