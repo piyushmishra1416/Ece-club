@@ -22,14 +22,14 @@ const Card = (props) => {
          top-[-6px] z-[-10] left-[10px]'></div>
       </div> */}
       <div className='text-center mt-7'>
-        <p className='tracking-wider font-bold text-2xl capitalize text-purple-600'>{review.name}</p>
+        <p className='tracking-wider font-bold text-2xl capitalize text-white'>{review.name}</p>
        <div className='h-[150px]'>
-       <div className='absolute top-[17%] left-[35%] z-[10] mx-auto'>
+       <div className='absolute top-[17%] left-[38%] z-[10] mx-auto'>
       <img 
         className="aspect-square rounded-full w-[140px] h-[140px] z-[25]"
         src={review.image}/>
-        <div className='w-[140px] h-[140px] bg-violet-500 rounded-full absolute
-         top-[-6px] z-[-10] left-[10px]'></div>
+        {/* <div className='w-[140px] h-[140px] bg-violet-500 rounded-full absolute
+         top-[-6px] z-[-10] left-[10px]'></div> */}
       </div>
        </div>
         <p className='text-violet-300 uppercase text-sm mt-2'>{review.job}</p>

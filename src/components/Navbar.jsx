@@ -13,6 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import logo1 from "../assets/logo1.png";
+import logocrop from "../assets/logocrop.png";
 import { Link } from "react-router-dom";
 
 const pages = ["Home", "About us", "People", "Events", "Contact us"];
@@ -42,7 +43,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/">
-            <img src={logo1} alt="logo" className="h-[100px] ml-10 w-[200px]" />
+            <img src={logocrop} alt="logo" className="h-24 ml-10 w-40" />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

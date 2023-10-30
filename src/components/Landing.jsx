@@ -10,8 +10,10 @@ import mission from "../assets/mission.jpeg";
 import bg1 from "../assets/bg1.jpeg";
 import bg2 from "../assets/bg2.jpeg";
 import bg3 from "../assets/bg3.jpeg";
+import bg5 from "../assets/bg5.jpg";
 import Carousel from "./Carousel";
-
+import Testimonials from "../layouts/Crousal/Testimonials";
+import reviews from "../data.js";
 function Landing() {
   const sectionStyle = {
     background: "linear-gradient(to bottom, black, #4ac7f0)",
@@ -27,14 +29,17 @@ function Landing() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${bgImage})` }}
+          style={{ backgroundImage: `url(${bg5})` }}
         ></div>
         <div className="relative z-10">
           <h2 className="text-xl font-semibold mb-3">
-            Welcome to the<b> Technical Club </b>  of ECE Department, IIIT Kottayam
+            Welcome to the<b> Technical Club </b> of ECE Department, IIIT
+            Kottayam
           </h2>
           <h1 className="text-6xl font-bold text-primary mb-3">ELIX</h1>
-          <p className="text-2xl"><b>Electronic Learning and Innovation eXperience</b></p>
+          <p className="text-2xl">
+            <b>Electronic Learning and Innovation eXperience</b>
+          </p>
           <p className="mt-8 text-gray-700 flex items-center text-2xl">
             <img
               src={quotationmark}
@@ -48,11 +53,15 @@ function Landing() {
       </section>
 
       <section
-        className="flex justify-center items-center bg-beige-50 py-12"
+        className="flex justify-center absloute top-[30%] bg-beige-50 py-12"
         style={{ backgroundColor: "#BDC2BF" }}
       >
         <div className="w-1/2">
-          <img alt="About Us" src={aboutus} className="w-5/6 mx-auto rounded-lg h-5/6" />
+          <img
+            alt="About Us"
+            src={aboutus}
+            className="w-5/6 mx-auto rounded-lg h-5/6"
+          />
         </div>
         <div className="w-1/2 mx-4 md:mx-20">
           <h1 className="text-4xl font-bold mb-4  text-primary">About Us</h1>
@@ -73,10 +82,18 @@ function Landing() {
           </p>
         </div>
       </section>
-      <Carousel />
-      <section className="flex justify-center items-center py-12"  style={{ backgroundColor: "#BDC2BF" }}>
+      <Testimonials reviews={reviews} />
+
+      <section
+        className="flex justify-center items-center py-12"
+        style={{ backgroundColor: "#BDC2BF" }}
+      >
         <div className="w-1/2">
-          <img alt="About Us" src={mission} className="w-5/6 mx-auto rounded-lg h-auto" />
+          <img
+            alt="About Us"
+            src={mission}
+            className="w-5/6 mx-auto rounded-lg h-auto"
+          />
         </div>
         <div className="w-1/2 mx-4 md:mx-20">
           <h1 className="text-4xl font-bold mb-4  text-primary">Mission</h1>
