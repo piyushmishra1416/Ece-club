@@ -26,10 +26,18 @@ function Footer() {
             <img src={logo1} alt="logo" className="w-64 h-56" />
 
             <div className="flex ml-4 space-x-4">
-              <FacebookIcon fontSize="large" sx={{ color: "#1877f2" }} />
-              <InstagramIcon fontSize="large" sx={{ color: "#e4405f" }} />
-              <LinkedInIcon fontSize="large" sx={{ color: "#0077b5" }} />
-              <TwitterIcon fontSize="large" sx={{ color: "#1da1f2" }} />
+              <a href="https://linktr.ee/elix_iiitk" target="_blank">
+                <FacebookIcon fontSize="large" sx={{ color: "#1877f2" }} />
+              </a>
+              <a href="https://linktr.ee/elix_iiitk" target="_blank">
+                <InstagramIcon fontSize="large" sx={{ color: "#e4405f" }} />
+              </a>
+              <a href="http://https://linktr.ee/elix_iiitk" target="_blank">
+                <LinkedInIcon fontSize="large" sx={{ color: "#0077b5" }} />
+              </a>
+              <a href="http://https://linktr.ee/elix_iiitk" target="_blank">
+                <TwitterIcon fontSize="large" sx={{ color: "#1da1f2" }} />
+              </a>
             </div>
           </div>
           <div className="w-1/2 flex">
